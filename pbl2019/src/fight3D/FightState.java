@@ -35,6 +35,10 @@ public class FightState extends AbstractGameState {
 	    System.gc();
 	    // BGM
 	    BGM3D.playBGM(fightBGM);
+	    
+	    Sound3D sound = new Sound3D("data//pocha//attack.wav");
+	    sound.play();
+	    sound.play(50);
 	}
 
 	@Override
